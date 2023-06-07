@@ -5,6 +5,7 @@ import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.commands.TakeScreenshot;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
+import org.junit.jupiter.api.Tag;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +15,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static org.openqa.selenium.By.linkText;
 
+@Tag("simple")
 public class WebSteps {
     @Step("Открываем главную страницу")
     public void openMainPage() {
